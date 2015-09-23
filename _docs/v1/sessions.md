@@ -1,16 +1,23 @@
 ---
 layout: doc
 title: Session management
+order: 1
 sections:
-  - Creating account
-  - Login
-  - Logout
+  -
+    name: Account Creation
+    url: create
+  -
+    name: Login
+    url: login
+  -
+    name: Logout
+    url: logout
 version: v1
 ---
 
 # Session management
 
-### Creating an Account
+###  <a name="create"></a> Creating an Account
 
 After you had installed the command line interface you must create an account, the command looks like this:
 
@@ -34,7 +41,7 @@ If the SSH already exists on the system but you could create the account you hav
 
 **Because we are on beta after you create the account send us an email to beta@infiniteloops.co so we can activate you as a beta user**
 
-### Login
+### <a name="login"></a> Login
 
 {% highlight bash linenos %}
 iloops login --help
@@ -51,7 +58,7 @@ OPTIONS:
 
 You have to use your credentials to authenticate on the system.
 
-### Logout
+### <a name="logout"></a> Logout
 
 The logout command is pretty easy, it closes the session on the computer.
 

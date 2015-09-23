@@ -25,7 +25,8 @@ You can test if this is working by using the command:
 {% highlight bash linenos %}
 iloops
 NAME:
-   toolbelt - ILoops command client will allow you to deploy projects on the cloud
+   toolbelt - ILoops command client will allow you to deploy projects
+   on the cloud
 
 USAGE:
    toolbelt [global options] command [command options] [arguments...]
