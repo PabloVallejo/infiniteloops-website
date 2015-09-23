@@ -1,0 +1,58 @@
+#index
+  height: 100%
+
+  // INTRO SECTION
+  #intro
+    +linear-degrade($purple, $light-purple, 60%)
+    height: 75%
+
+    .wrapper
+      // TODO: change background for real chart
+      background:
+        image: url('/assets/line-chart.svg')
+        size: 12800px 485px
+        repeat: no-repeat
+        position: bottom center
+      height: 100%
+      text-align: center
+      +flexbox
+      +flex-direction(column)
+      +justify-content(flex-start)
+      +align-items(center)
+
+      .brand, .intro-header, .button-action
+        padding: 2.2rem 0
+
+      .brand
+        padding-top: 4rem !important
+        .logo
+          +logo(200px)
+      .intro-header
+        .call_to_action
+          line-height: 4rem
+          font:
+            size: 2.8rem
+
+        .slug
+          line-height: 2rem
+          color: $purple-opacity
+          font:
+            size: 1.2rem
+
+      .button-action
+        .button-start
+          @extend .button
+          padding: 0.8rem 3rem
+          text-transform: uppercase
+          line-height: 1.4rem
+          font:
+            size: 1.2rem
+
+          .mini
+            font:
+              size: 0.9rem
+
+  // FOCUS section
+  #focus
+    h3
+      color: $green

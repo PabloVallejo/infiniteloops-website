@@ -1,0 +1,73 @@
+#docs
+  display: block
+  padding: 3rem 0
+  .sidebar, .doc
+    display: inline-block
+    vertical-align: top
+
+  .sidebar
+    width: 30%
+
+    a
+      color: $white
+      display: block
+      font:
+        family: $font-light
+      line-height: 1.5rem
+      text-decoration: none
+      margin-top: 2rem
+
+      &:first-child
+        margin-top: 0
+
+      &.sub
+        position: relative
+        margin-top: 0.5rem
+        margin-left: 1rem
+        color: $purple-opacity
+
+        &:before
+          content: "\2013"
+          position: absolute
+          left: -20px
+          top: 0px
+          opacity: .4
+
+  .doc
+    width: 70%
+    h2, h3, h4, ul, ol, pre, p
+      margin: 0
+      margin-bottom: 1.4rem
+
+    h2, h3, h4
+      color: $purple-opacity
+      font:
+        family: $font-light
+    h1
+      font:
+        weight: 300
+        size: 1.8rem
+        family: $font-light
+      position: relative
+      top: -1px
+      margin-bottom: 20px
+
+    h2
+      font:
+        size: 1.6rem
+      margin:
+        top: 40px
+
+    h3
+      font:
+        size: 1.4rem
+
+    p
+      line-height: 1.7rem
+      font:
+        weight: 400
+        size: 1rem
+        family: $font-light
+
+    p + h2, p + h3, ol + h3
+      margin-top: 2rem

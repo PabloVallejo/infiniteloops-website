@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% include header.html %}
+<section id="docs">
+  <div class="wrapper">
+    <aside class="sidebar">
+      <nav>
+        {% for doc in site.docs %}
+          <a href="{{ doc.url }}">{{ doc.title }}</a>
+          {% for section in doc.sections %}
+            <a href="{{ doc.url }}#{{ section }}" class='sub'>{{ section }}</a>
+          {% endfor %}
+        {% endfor %}
+      </nav>
+    </aside><article class='doc'>
+      {{ content }}
+    </article>
+  </div>
+</section>

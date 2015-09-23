@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1213px" height="422px" viewBox="0 0 1213 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3 (11970) - http://www.bohemiancoding.com/sketch -->
+    <title>LINE CHART</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1A1E30" offset="0%"></stop>
+            <stop stop-color="#2E3578" offset="35.939493%"></stop>
+            <stop stop-color="#1A1E30" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="1282.96032" height="485"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="home" sketch:type="MSArtboardGroup" transform="translate(-149.000000, -384.000000)">
+            <g id="LINE-CHART" sketch:type="MSLayerGroup" transform="translate(79.000000, 364.000000)">
+                <g id="lines" transform="translate(240.456680, 20.565371)" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup">
+                    <rect id="line" x="962.318623" y="1.54562977" width="1.78188934" height="417.320037"></rect>
+                    <rect id="line" x="801.948583" y="1.54562977" width="1.78188934" height="417.320037"></rect>
+                    <rect id="line" x="641.578543" y="1.54562977" width="1.78188934" height="417.320037"></rect>
+                    <rect id="line" x="481.208502" y="1.54562977" width="1.78188934" height="417.320037"></rect>
+                    <rect id="line" x="320.838462" y="1.54562977" width="1.78188934" height="417.320037"></rect>
+                    <rect id="line" x="160.468421" y="1.54562977" width="1.78188934" height="417.320037"></rect>
+                    <rect id="line" x="0.0983805668" y="0" width="1.78188934" height="417.320037"></rect>
+                </g>
+                <g id="path">
+                    <mask id="mask-3" sketch:name="mask" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="mask" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                    <path d="M71.6743681,439.811216 C71.6743681,439.811216 189.706886,173.863001 240.596058,173.862997 C291.48523,173.862993 332.646692,288.758413 402.259678,288.758421 C471.872664,288.758429 510.633123,234.833987 562.309483,234.83399 C613.985843,234.833993 650.761466,288.75843 721.84232,288.758421 C792.923174,288.758412 830.348365,122.10855 883.396275,122.108549 C936.444184,122.108548 975.037345,213.55329 1045.2518,213.553289 C1115.46626,213.553288 1150.76767,303.662348 1201.58451,303.662352 C1212.9544,303.662352 1221.63308,310.988132 1228.63088,322.361511 C1252.90918,361.820536 1268.00109,445.522129 1294.00652,445.522123 C1327.50757,445.522116 1294.00654,592.474107 1294.00654,592.474107 L150.819807,592.474107" stroke="#5F23F6" stroke-width="2" sketch:type="MSShapeGroup" mask="url(#mask-3)"></path>
+                </g>
+                <g id="points" transform="translate(232.427503, 115.957597)" stroke="#8F68FF" stroke-width="2" fill="#8E66FF" sketch:type="MSShapeGroup">
+                    <ellipse id="point" cx="970.238745" cy="188.238516" rx="8.01850202" ry="7.71201413"></ellipse>
+                    <ellipse id="point" cx="812.868704" cy="97.2385159" rx="8.01850202" ry="7.71201413"></ellipse>
+                    <ellipse id="point" cx="652.498664" cy="8.54240283" rx="8.01850202" ry="7.71201413"></ellipse>
+                    <ellipse id="point" cx="492.128623" cy="172.814488" rx="8.01850202" ry="7.71201413"></ellipse>
+                    <ellipse id="point" cx="329.758583" cy="118.830389" rx="8.01850202" ry="7.71201413"></ellipse>
+                    <ellipse id="point" cx="173.388543" cy="172.814488" rx="8.01850202" ry="7.71201413"></ellipse>
+                    <ellipse id="point" cx="8.01850202" cy="60.5424028" rx="8.01850202" ry="7.71201413"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

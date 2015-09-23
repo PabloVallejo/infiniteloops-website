@@ -1,0 +1,24 @@
+html, body
+  height: 100%
+
+body
+  background: $purple
+  color: $white_purple
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  font:
+    size: $font-size-basic
+    family: $font-family
+
+.wrapper
+  width: 100%
+  max-width: $wrapper-width
+  margin: 0 auto
+
+
+.site-header
+  display: block
+  padding: 1rem 0
+  +linear-degrade($purple, $light-purple, 70%)
+  .logo
+    +logo(200px)

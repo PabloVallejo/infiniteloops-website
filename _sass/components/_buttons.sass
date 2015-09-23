@@ -1,0 +1,17 @@
+.button
+  text-decoration: none
+  display: inline-block
+  background: $super-purple
+  font:
+    family: $font-light
+  +box-sizing
+  color: $white
+  +border-radius(3px)
+
+  &:hover
+    background: lighten($super-purple, 4%)
+
+  .mini
+    display: block
+    text-transform: lowercase
+    color: $purple
