@@ -76,3 +76,13 @@ ga 'send', 'pageview'
   return
 ) document, window.mixpanel or []
 mixpanel.init '85eac66e9651a2cd1440230c30615da0'
+
+$ ->
+
+  $(".timer").typed({
+    strings: ["Second", "Minute", "Hour", "Day"]
+    startDelay: 1200
+    typeSpeed: 100
+    backSpeed: 30
+    backDelay: 700
+        })
