@@ -1,0 +1,18 @@
+<div id='footer'>
+  <div class="wrapper">
+    <div class="menus-links">
+      <p>© 2015 Infiniteloops, LLC.</p>
+
+      <nav class="footer-links">
+        <a href="/docs/v{{version}}/introduction.html">Docs</a>
+        <a href="/about.html">About</a>
+        <a href="#">Status</a>
+      </nav>
+    </div>
+    <div class="social-links">
+      {% for social in site.networks %}
+        <a class="icon-{{ social.name }}" href="{{ social.url }}" target="_blank"></a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

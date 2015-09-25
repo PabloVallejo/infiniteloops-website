@@ -9,11 +9,13 @@ body
   font:
     size: $font-size-basic
     family: $font-family
+    weight: 300
 
 .wrapper
-  width: 100%
+  width: 95%
   max-width: $wrapper-width
   margin: 0 auto
+
 
 
 .site-header
@@ -21,4 +23,11 @@ body
   padding: 1rem 0
   +linear-degrade($purple, $light-purple, 70%)
   .logo
-    +logo(200px)
+    +logo(90px)
+
+a
+  text-decoration: none
+  color: $purple-opacity
+
+  &:hover
+    color: $super-purple

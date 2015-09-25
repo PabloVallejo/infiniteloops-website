@@ -1,14 +1,23 @@
 # Site settings
+version: 1
 title: Infiniteloops
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://infiniteloops.co" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+baseurl: ""
+url: https://infiniteloops.co
+networks:
+  -
+    name: github
+    url: https://github.com/infiniteloopsco
+  -
+    name: facebook
+    url: https://www.facebook.com/infiniteloops.io?fref=ts
+  -
+    name: twitter
+    url: https://twitter.com/Infiniteloopsio
 collections:
   docs:
     output: true
@@ -16,8 +25,8 @@ collections:
     permlink: /docs/:version/:path/
 # Build settings
 markdown: kramdown
-slim:
-  pretty: true
-  format: html5
 sass:
   style: compressed
+assets:
+  cache: true
+  css_compressor: sass

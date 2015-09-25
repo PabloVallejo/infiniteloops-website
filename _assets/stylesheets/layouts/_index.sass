@@ -1,20 +1,22 @@
 #index
-  height: 100%
+  display: block
 
   // INTRO SECTION
   #intro
     +linear-degrade($purple, $light-purple, 60%)
-    height: 75%
 
     .wrapper
+      +box-sizing
+      max-height: 600px
       // TODO: change background for real chart
       background:
         image: url('/assets/line-chart.svg')
-        size: 12800px 485px
+        size: contain
         repeat: no-repeat
         position: bottom center
       height: 100%
       text-align: center
+      padding-bottom: 5rem
       +flexbox
       +flex-direction(column)
       +justify-content(flex-start)
