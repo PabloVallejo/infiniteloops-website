@@ -35,18 +35,19 @@ VERSION:
    X.X.X
 
 COMMANDS:
-   account:create			creates a new account
-   login			login with credentials
-   logout			logout from the current account
-   ssh:add			logout from the current account
-   project:create		creates a new project with the given name
-   project:list			list my projects
-   project:delete		Deletes a project by name
-   project:leave		leaves a project
-   project:user:add		adds an user by email to the project
-   project:user:remove		removes an user by email from the project
-   project:user:delegate	delegates an user as the admin of the project
-   help, h			Shows a list of commands or help for one command
+   account:create			    creates a new account
+   login			             login with credentials
+   logout			          logout from the current account
+   ssh:add			          logout from the current account
+   project:init		       inits a new project with the given name, if no name is
+                            given it will  take the current directory name
+   project:list			    list my projects
+   project:delete		       deletes a project by name
+   project:leave		       leaves a project
+   project:user:add		    adds an user by email to the project
+   project:user:remove	    removes an user by email from the project
+   project:user:delegate	 delegates an user as the admin of the project
+   help, h			          Shows a list of commands or help for one command
 
 GLOBAL OPTIONS:
    --help, -h		show help

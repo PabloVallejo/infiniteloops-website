@@ -4,8 +4,8 @@ title: Project management
 order: 2
 sections:
   -
-    name: Creating a Project
-    url: create
+    name: Starting a Project
+    url: start
   -
     name: Deploying the Projects
     url: deploy
@@ -20,26 +20,45 @@ version: v1
 
 # Project Management
 
-###  <a name="create"></a> Creating a project
+###  <a name="start"></a> Creating a project
 
-You can create a project with this command
+You can init a project to be deployed on our cloud with this command
 
 {% highlight bash linenos %}
-iloops project:create name-of-your-project
+iloops project:init name-of-your-folder-project
 {% endhighlight %}
 
-You just have to replace name-of-your-project, and there should not be an existing folder with that name. This command will create you a new folder under the current directory wih that name and it will have the default project's layout.
+You just have to replace name-of-your-folder-project, and there should be an existing folder with that name. This command will init your project to be deployed, for this the commnad line will ask you two things, the path of the main script that will be executed and the [periodicity format](#format).
 
-I will create a demo called slack-noti:
+For this example I'll use this demo project [SlackNodeDemo](https://github.com/infiniteloopsco/SlackNodeDemo) that I'll download with the next command:
 
 {% highlight bash linenos %}
-iloops project:create slack-noti
+git clone git@github.com:infiniteloopsco/SlackNodeDemo.git
 {% endhighlight %}
 
-This will create the following tree structure
+The project has the following structure:
 
 {% highlight bash linenos %}
-slack-noti
+SlackNodeDemo
+├── LICENSE
+├── README.md
+├── package.json
+└── src
+    └── app.js
+{% endhighlight %}
+
+So I'll init this project to be deployed with this command:
+
+{% highlight bash linenos %}
+iloops project:init SlackNodeDemo
+{% endhighlight %}
+
+When the command line request me the script path I use "src/app.js" and for the example I'll run this script every 5 minutes so the format will be "@every 5m".
+
+This will add the iloops.project file to the root of the project.
+
+{% highlight bash linenos %}
+SlackNodeDemo
 ├── LICENSE
 ├── README.md
 ├── iloops.project
@@ -48,15 +67,7 @@ slack-noti
     └── app.js
 {% endhighlight %}
 
-There are three important files so I will address one by one.
-
-#### package.json
-
-Here will be all the dependencies that our script will use, for this example I will install slack-node package, so I will use this command inside the project folder:
-
-{% highlight bash linenos %}
-npm install slack-node --save
-{% endhighlight %}
+There are two important files so I will address one by one.
 
 #### app.js
 
@@ -88,17 +99,20 @@ This file is a json and it has the configuration needed by the InfiniteLoops clo
 {
   "name": "slack-noti",
   "app_id": "slack-noti-2",
+  "main_script": "src/app.js",
   "loops": {
-    "cron_format": "@every 1m"
+    "cron_format": "@every 5m"
   }
 }
 {% endhighlight %}
 
 The **app_id** it is the project's identifier on the system so you should change that.
 
+The **main_script** is the one that will be run every 5 minutes for this example or the periodicity that you set on your project.
+
 The **loops -> cron_format** is the most important on this file, here you set how much often you want to run the script. The allowed formats are the following:
 
-**cron expresion**
+###  <a name="format"></a> **cron expresion**
 
 {% highlight bash %}
 Field name   | Mandatory? | Allowed values  | Allowed special characters
