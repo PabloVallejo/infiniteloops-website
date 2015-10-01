@@ -158,7 +158,7 @@ When you have the project and be ready to be executed you have to do a git push
 {% highlight bash linenos %}
 git add -A
 git commit -m "deploy"
-git push origin master
+git push iloops master
 {% endhighlight %}
 
 You have to do this to apply the changes on the cloud or if you want to stop/start the script's execution.
