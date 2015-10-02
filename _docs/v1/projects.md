@@ -20,7 +20,7 @@ version: v1
 
 # Project Management
 
-###  <a name="start"></a> Creating a project
+###  <a name="start"></a> Starting a project
 
 You can init a project to be deployed on our cloud with this command
 

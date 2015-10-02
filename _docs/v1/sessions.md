@@ -39,7 +39,7 @@ By default it will try to use the ssh key ~/.ssh/id_rsa.pub on your home directo
 
 If the SSH already exists on the system but you could create the account you have to upload a SSH after logging in the command line.
 
-**Because we are on beta after you create the account send us an email to beta@infiniteloops.co so we can activate you as a beta user**
+**Because we are on beta after you create the account send us an email to yolo@infiniteloops.co so we can activate you as a beta user**
 
 ### <a name="login"></a> Login
 
