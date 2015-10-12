@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Project management
-order: 2
+order: 3
 sections:
   -
     name: Starting a Project

@@ -1,7 +1,7 @@
 ---
 layout: doc
 title: Team management
-order: 3
+order: 4
 sections:
   -
     name: Leaving a Project

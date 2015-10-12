@@ -12,6 +12,9 @@ sections:
   -
     name: Logout
     url: logout
+  -
+    name: Forgot Password
+    url: forgot
 version: v1
 ---
 
@@ -82,3 +85,18 @@ OPTIONS:
    --name, -n 	name for the ssh key
    --ssh, -s 	ssh key
 {% endhighlight %}
+
+###  <a name="forgot"></a> Forgot Password
+
+If you forget the password you can request a change of it by using this command:
+
+{% highlight bash linenos %}
+iloops password:forgot -e user email
+{% endhighlight %}
+
+You will receive an email from noreply@infiniteloops.co with the token for the request, whit this command line you can set your new password by providing the token.
+{% highlight bash linenos %}
+iloops password:change
+{% endhighlight %}
+
+After the change has been changed you can login again.
